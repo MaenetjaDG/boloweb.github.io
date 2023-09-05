@@ -165,6 +165,7 @@ a:focus {
 
 .header_section .header_top .contact_nav a:hover i {
   background-color: #da7426;
+  color: rgb(255, 0, 0);
 }
 
 .header_section .header_top .social_box {
@@ -233,7 +234,7 @@ a:focus {
 
 .custom_nav-container .navbar-nav .nav-item .nav-link {
   padding: 5px 30px;
-  color: #000000;
+  color: #ffffff;
   text-align: center;
   text-transform: uppercase;
   border-radius: 5px;
