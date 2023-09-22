@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Document</title>
+ <link rel="stylesheet" href="css2/styles.css">
+</head>
+<body>
+ 
+<div class="heading">
+ <div class="container">
+  <div class="main-video">
+   <div class="video">
+    <video src="images/media/y2mate.com - Always  Otherwise Teaser_480p.mp4" controls muted  autoplay ></video>
+   <h3 class="title">01. Always & Otherwise Teaser.</h3>
+   </div>
+  </div>
+  <div class="video-list">
+   <div class="vid active">
+     <video src="images/media/y2mate.com - Always  Otherwise Teaser_480p.mp4"  muted></video>
+   <h3 class="title">01. Always &  Otherwise Teaser.</h3>
+   </div>
+   <div class="vid">
+     <video src="images/media/y2mate.com - BLOCK 5 filmmaker statement_480p.mp4"  muted ></video>
+   <h3 class="title">02. BLOCK 5 one village's struggle for water.</h3>
+   </div>
+   <div class="vid">
+    <video src="images/media/y2mate.com - 2021 YOUTH MONTH  Youth and 4IR by Buhle Nkosi AIM Bolobathaba PESP Film and TV Production INTERN_480p.mp4"  muted ></video>
+   <h3 class="title">03. 2021 YOUTH MONTH and AIM Bolobathaba PESP Film and TV Production INTERN.</h3>
+   </div>
+   <div class="vid">
+    <video src="images/media/y2mate.com - VULOZWI TV Traffic Cop_360p.mp4"  muted ></video>
+   <h3 class="title">04.  VULOZWI Traffic Cop.</h3>
+   </div>
+   <div class="vid">
+     <video src="images/media/y2mate.com - BMG MICT SETA Film  TV NQF4 2019 Heritage Day PSAs Xitsong and Khelobedu_480p.mp4" muted  ></video>
+   <h3 class="title">05. BMG MICT SETA Film  TV NQF4 2019 Heritage Day.</h3>
+   </div>
+  
+   <div class="vid">
+    <a id="videos" href="https://www.youtube.com/channel/UCruh9HBPufY6nCnllYuXEfQ" target="_blank"
+      class="videos">MORE VIDEOS</a>
+   </div>
+  </div>
+ </div>
+</div>
+
+
+
+
+
+<script>
+let listVideo = document.querySelectorAll('.video-list .vid');
+let mainVideo = document.querySelector('.main-video video');
+let title = document.querySelector('.main-video title');
+
+listVideo.forEach(video => {
+ video.onclick = () => {
+     listVideo.forEach(vid => vid.classList.remove('active'));
+  video.classList.add('active');
+
+  if(video.classList.contains('active')){
+    let src = video.children[0].getAttribute('src');
+    mainVideo.src = src;
+    let text = video.children[1].innerHTML;
+    title.innerHTML = text;
+  };
+ };
+ 
+});
+
+</script>
+
+
+</body>
+</html>

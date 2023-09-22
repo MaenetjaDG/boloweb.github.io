@@ -38,6 +38,134 @@
     <!-- responsive style -->
     <link href="css/responsive.css" rel="stylesheet" />
     <link href="images/icon.jpg" rel="shortcut icon" type="image/x-icon" />
+
+    <style>
+
+
+/*************CURRENT PROJECTS***********/
+.projects {
+  margin-left: 15%;
+
+}
+
+.projects li {
+  margin: 15px;
+
+}
+
+#looking {
+  padding-left: 21px;
+}
+/*************OUR TEAM****************/
+
+.container {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ flex-wrap: wrap;
+}
+
+.container .card {
+ width: 200px;
+ height: 300px;
+ padding: 60px 30px;
+ margin: 20px;
+ background: #f2f3f7;
+ box-shadow: 0.6em 0.6em 1.2em #d2dce9,
+  -0.5em -0.5em 1em #ffffff;
+ border-radius: 20px;
+}
+
+.container .card .content {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ flex-direction: column;
+}
+
+.container .card .content .imgBx {
+ width: 180px;
+ height: 180px;
+ border-radius: 50%;
+ position: relative;
+ margin-bottom: 20px;
+ overflow: hidden;
+}
+
+.container .card .content .imgBx img {
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ object-fit: cover;
+}
+
+.container .card .content .contentBx #name1 {
+ color: #ff7b00;
+ font-size: 20px;
+ font-weight: bold;
+ text-align: center;
+ letter-spacing: 1px;
+}
+
+.container .card .content .contentBx #name2 {
+ color: #6c758f;
+ font-size: 1.2rem;
+ font-weight: bold;
+ text-align: center;
+}
+
+.container .card .content .sci {
+ margin-top: 20px;
+}
+
+.container .card .content .sci a {
+ text-decoration: none;
+ color: #6c758f;
+ font-size: 30px;
+ margin: 10px;
+ transition: color 0.4s;
+}
+
+.container .card .content .sci a:hover {
+ color: #0196e3;
+}
+
+
+/***********ABOUT US SECTION****************/
+.Services {
+ background: #f6f5f5;
+ text-align: center;
+}
+
+.Services h1 {
+ display: inline-block;
+ text-transform: uppercase;
+ border-bottom: 4px solid #3498db;
+
+ color: black;
+ font-size: 20px;
+ padding-bottom: 10px;
+ margin-top: 40px;
+}
+
+.abtus {
+ padding-left: 250px;
+ padding-right: 250px;
+ text-align: center;
+}
+
+h5 {
+ font-size: 25px;
+ text-align: center;
+}
+#proj-color {
+ color: #ff7b00;
+}
+
+
+    </style>
   </head>
   
   <body>
@@ -103,7 +231,7 @@
                   </li>  
                   <li class="nav-item">
                     <div class="dropdown">
-                      <a class="nav-link" href="">Projects</a>
+                      <a class="nav-link" href="portfolio.html">Projects</a>
                       <div class="dropdown-content">
                         <a href="c_projects.html">Current Projects</a>
                         <a href="p_projects.html">Previous Projects</a>
@@ -129,7 +257,7 @@
                     <a class="nav-link" href="about.html"> About</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact Us</a>
+                    <a class="nav-link" href="contact.html">Contact Us <span class="sr-only">(current)</span></a>
                   </li>
                   <li class="nav-item">
                    <!---<a class="nav-link" href="#">
@@ -154,365 +282,110 @@
   </div>
 
 
-  <!-- portfolio section -->
-
-  <section class="portfolio_section ">
-    <div class="container">
-      <div class="heading_container heading_center">
-        <h2>
-          Our Work Portfolio
-        </h2>
-      </div>
-      <div class="carousel-wrap ">
-        <div class="filter_box">
-          <nav class="owl-filter-bar">
-            <a href="#" class="item active" data-owl-filter="*">All</a>
-            <a href="#" class="item" data-owl-filter=".decorative">PHOTOGRAPHY</a>
-            <a href="#" class="item" data-owl-filter=".facade">FILS </a>
-            <a href="#" class="item" data-owl-filter=".perforated">DIGITAL MEDIA
-            </a>
-            <a href="#" class="item" data-owl-filter=".railing">MULTIMEDIA ACADEMY </a>
-          </nav>
-        </div>
-      </div>
-    </div>
-    <div class="owl-carousel portfolio_carousel">
-      <div class="item decorative">
-        <div class="box">
-          <div class="img-box">
-            <img src="images/gallery12.JPG" alt="" />
-            <div class="btn_overlay">
-              <a href="" class="">
-                See More
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="item facade">
-        <div class="box">
-          <div class="img-box">
-            <img src="images/gallery9.jpg" alt="" />
-            <div class="btn_overlay">
-              <a href="" class="">
-                See More
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="item perforated decorative">
-        <div class="box">
-          <div class="img-box">
-            <img src="images/gallery10.JPG" alt="" />
-            <div class="btn_overlay">
-              <a href="" class="">
-                See More
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="item railing">
-        <div class="box">
-          <div class="img-box">
-            <img src="images/gallery5.jpg" alt="" />
-            <div class="btn_overlay">
-              <a href="" class="">
-                See More
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- end portfolio section -->
 
 
-  <!-- service section -->
 
-  <section class="service_section layout_padding">
-    <div class="container ">
-      <div class="heading_container heading_center">
-        <h2>Our <span>Services</span></h2>
-      </div>
-      <div class="row">
-        <div class="col-sm-6 col-md-4">
-          <div class="box ">
-            <div class="img-box">
-              <i  class="fa-solid fa-film"></i>
-            </div>
-            <div class="detail-box">
-              <h5>
-               Films
-              </h5>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium velit amet mollitia, omnis soluta consequuntur.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-4">
-          <div class="box ">
-            <div class="img-box">
-              <i  class="fa-solid fa-film"></i>
-            </div>
-            <div class="detail-box">
-              <h5>
-                Digital Media
-              </h5>
-              <p>
-               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat, harum corporis! Soluta, atque? Veritatis, repellendus.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-4">
-          <div class="box ">
-            <div class="img-box">
-              <i style="font-size: 70px;" class="fa-solid fa-camera-retro"></i>
-            </div>
-            <div class="detail-box">
-              <h5>
-                Photography
-              </h5>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique quaerat et perferendis. Aut, ipsum alias.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-4">
-          <div class="box ">
-            <div class="img-box">
-              <i  class="fa-solid fa-film"></i>
-            </div>
-            <div class="detail-box">
-              <h5>
-                Multimedia Academy
-              </h5>
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum asperiores perferendis doloremque similique dignissimos deleniti!
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-4">
-          <div class="box ">
-            <div class="img-box">
-              <i  class="fa-solid fa-film"></i>
-            </div>
-            <div class="detail-box">
-              <h5>
-                Multimedia Academy
-              </h5>
-              <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat, vel incidunt! Accusantium earum dolorum repellendus.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-4">
-          <div class="box ">
-            <div class="img-box">
-              <i  class="fa-solid fa-film"></i>
-            </div>
-            <div class="detail-box">
-              <h5>
-                Multimedia Academy
-              </h5>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, voluptas labore facilis corporis ipsum nihil.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="btn-box">
-        <a href="">
-          Read More
-        </a>
-      </div>
-    </div>
-  </section>
 
-  <!-- end service section
-  <section class="client_section layout_padding">
-    <div class="container">
-      <div class="heading_container heading_center">
-        <h2>
-          Our Team
-        </h2>
-      </div>
-      <div class="row">
-        <div class="col-md-9 mx-auto">
-          <div id="customCarousel2" class="carousel slide" data-ride="carousel">
-            <div class="row">
-              <div class="col-md-11">
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <div class="box">
-                      <div class="client_id">
-                        <div class="img-box">
-                          <img src="images/client.jpg" alt="" />
-                        </div>
-                        <h5>
-                          Molatelo Maenetja
-                        </h5>
-                      </div>
-                      <div class="detail-box">
-                        <p>
-                          ipsum dolor sit amet, consectetur adipiscing elit,
-                          sed do eiusmod tempor incididunt ut labore et dolore
-                          magna aliqua. Ut enim ad minim veniam, quis nostrud
-                          exercitation ullamco laboris nisi ut aliquip ex ea
-                          commodo consequat. Duis aute irure dolor in
-                          reprehenderit in voluptate velit
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <div class="box">
-                      <div class="client_id">
-                        <div class="img-box">
-                          <img src="images/client.jpg" alt="" />
-                        </div>
-                        <h5>
-                          Alex Jonson
-                        </h5>
-                      </div>
-                      <div class="detail-box">
-                        <p>
-                          ipsum dolor sit amet, consectetur adipiscing elit,
-                          sed do eiusmod tempor incididunt ut labore et dolore
-                          magna aliqua. Ut enim ad minim veniam, quis nostrud
-                          exercitation ullamco laboris nisi ut aliquip ex ea
-                          commodo consequat. Duis aute irure dolor in
-                          reprehenderit in voluptate velit
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <div class="box">
-                      <div class="client_id">
-                        <div class="img-box">
-                          <img src="images/client.jpg" alt="" />
-                        </div>
-                        <h5>
-                          Alex Jonson
-                        </h5>
-                      </div>
-                      <div class="detail-box">
-                        <p>
-                          ipsum dolor sit amet, consectetur adipiscing elit,
-                          sed do eiusmod tempor incididunt ut labore et dolore
-                          magna aliqua. Ut enim ad minim veniam, quis nostrud
-                          exercitation ullamco laboris nisi ut aliquip ex ea
-                          commodo consequat. Duis aute irure dolor in
-                          reprehenderit in voluptate velit
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-1">
-                <ol class="carousel-indicators">
-                  <li data-target="#customCarousel2" data-slide-to="0" class="active"></li>
-                  <li data-target="#customCarousel2" data-slide-to="1"></li>
-                  <li data-target="#customCarousel2" data-slide-to="2"></li>
-                  <li data-target="#customCarousel2" data-slide-to="3"></li>
-                </ol>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  end client section -->
 
-  <!-------------OUR TEAM--------------->
-  <div class="responsive-container-block outer-container">
-    <div class="responsive-container-block inner-container">
-      <div class="responsive-cell-block wk-tab-12 wk-mobile-12 wk-desk-4 wk-ipadp-4 headings-container">
-        <p class="text-blk heading-text">
-          Meet our dream team
-        </p>
-        <p class="text-blk sub-heading-text">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fringilla et sagittis,
-          vestibulum risus lacus sit.
-        </p>
-      </div>
-      <div class="responsive-cell-block wk-desk-8 wk-ipadp-8 wk-tab-12 wk-mobile-12 team-members-container">
-        <div class="responsive-cell-block wk-desk-6 wk-ipadp-6 wk-mobile-12 wk-tab-12 card-container">
-          <div class="card">
-            <img class="card-img" src="images/molatelo.png">
-            <p class="text-blk name">
-              Molatelo Mainetja
-            </p>
-            <p class="text-blk position">
-              Managing Director & Filmmaker
-            </p>
-          </div>
-        </div>
-        <div class="responsive-cell-block wk-desk-6 wk-ipadp-6 wk-mobile-12 wk-tab-12 card-container">
-          <div class="card">
-            <img class="card-img" src="images/karabo.png">
-            <p class="text-blk name">
-              Karabo Rabjanyane
-            </p>
-            <p class="text-blk position">
-              Manager
-            </p>
-          </div>
-        </div>
-        <div class="responsive-cell-block wk-desk-6 wk-ipadp-6 wk-mobile-12 wk-tab-12 card-container">
-          <div class="card">
-            <img class="card-img" src="images/lolly.jpeg">
-            <p class="text-blk name">
-              Lorencia Williams
-            </p>
-            <p class="text-blk position">
-              Project & Student Affairs
-            </p>
-          </div>
-        </div>
-        <div class="responsive-cell-block wk-desk-6 wk-ipadp-6 wk-mobile-12 wk-tab-12 card-container">
-          <div class="card">
-            <img class="card-img" src="images/thabang.png">
-            <p class="text-blk name">
-              Thabang Molokomme
-            </p>
-            <p class="text-blk position">
-              IT & Facilities
-            </p>
-          </div>
-        </div>
-        <div class="responsive-cell-block wk-desk-6 wk-ipadp-6 wk-mobile-12 wk-tab-12 card-container">
-          <div class="card">
-            <img class="card-img" src="images/vivian.jpg">
-            <p class="text-blk name">
-              Vivian Hlungwane
-            </p>
-            <p class="text-blk position">
-              Admin
-            </p>
-          </div>
-        </div>
-       
-      </div>
-    </div>
+
+  <div class="heading_container heading_center">
+    <h2 style="margin-top: 20px;">Current  <span> Projects</span></h2>
   </div>
+  <section class="projects">
+    <div class="sub-projects">
+    <div class="dev">
+    <h4 id="proj-color">DEVELOPEMENT</h4>
+    
+    <ul>
+      <li><strong>Another Apartheid Story!</strong> (Documentary Short) 24&#39; 2024<br />
+      <span id="looking">LOOKING FOR Funding, Distribution</span></li>
+      <li><strong>David &amp; Goliath!</strong> (Investigative Documentary Reality) 12x30&#39; 2024<br />
+      <span id="looking">LOOKING FOR: Funding, Distribution, Co-Production</span></li>
+      <li><strong>Midwives</strong> ( Documentary Reality Series) 24x30&#39;2024<br />
+      <span id="looking">LOOKING FOR: Distribution,Founders, Co-Production</span></li>
+      <li><strong>Always &amp; Atherwise</strong> ( Documentary Short) 24&#39;2023<br />
+      <span id="looking">LOOKING FOR: Distribution,Founders</span></li>
+    </ul>
+    </div>
+    
+    <div class="production">
+    <h4 id="proj-color">PRODUCTION</h4>
+    
+    <ul>
+      <li><strong>How Not To Hijack Queenship,</strong> (Documentary Feature) 70&#39;2023<br />
+      <span id="looking">LOOKING FOR: Distribution, Co-Funders FUNDERS:NFVF</span></li>
+    </ul>
+    </div>
+    
+    <div class="p-production">
+    <h4 id="proj-color">POST-PRODUCTION</h4>
+    
+    <ul>
+      <li><strong>Let Alone Wash Hands,</strong>(Documentary Short) 48&#39;2023<br />
+      <span id="looking">LOOKING FOR:NFVF, Bolobathaba Media Group</span></li>
+      <li><strong>Street Snappers,</strong>(Documentary Short) 24&#39;2023<br />
+      <span id="looking">LOOKING FOR: Distribution, Funding</span></li>
+    </ul>
+    </div>
+    </div>
+    </section>
+    
 
-  <!----------OUR TEAM ENDA-------------->
 
+
+
+    
+  <!-- about section -->
+
+  <section class="about_section layout_padding" >
+    <div class="heading_container heading_center" style="border-top: 2px solid rgb(210, 210, 210);">
+      <h2 style="margin-top: 15px;">About <span>Us</span></h2>
+    </div>
+    <div class="container  ">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="detail-box">
+            <div class="heading_container">
+              <h2>Welcome to <span>Bolobathaba Media</span></h2>
+            </div>
+            <p>
+              Bolobathaba Media Group was established in
+              2010 as a film and television production
+              company, After a few years in business, we
+              realised there was a gap in multimedia skills
+              development and training, and that is when
+              Africa institute of Multimedia AIM was born in
+              2019
+              Our core business is film and digital media
+              production and training as well as journalism
+              training We also offer facilitation and assessor
+              services on a consultancy basis
+              Apart from multimedia production services, the
+              company also offers accredited programmes in
+              journalism, film and television production
+              We currently implement skills development
+              programmes in partnership with National
+              Electronic Media Institute of South Africa
+              NEMISA, National Film and Video Foundation
+              NFVF and MICT SETA
+            </p>
+            <a href="">
+              Read More
+            </a>
+          </div>
+        </div>
+        <div class="col-md-6 ">
+          <div class="img-box">
+            <img src="images/gallery9.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end about section -->
   <!-- contact section -->
-  <section class="contact_section ">
+  <section class="contact_section " style="border-top: 2px solid rgb(210, 210, 210);">
     <div class="container">
       <div class="heading_container heading_center">
         <h2 id="contactus">Get In <span>Touch</span></h2>
@@ -576,10 +449,50 @@
   <!-- end contact section -->
 
   <!-- client section -->
- 
+  <section class="sponsor-icon ">
+    <div class="sponsor">
+
+      <ul class="sponsor-grid">
+        <li class="sponsor">
+          <img src="images/AIM® LOGO.png" alt="waze">
+        </li>
+        <li class="sponsor">
+          <img src="images/final logo .png" alt="google">
+        </li>
+        <li class="sponsor">
+          <img src="images/ouclogo.png" alt="Fitbit">
+        </li>
+        <li class="sponsor">
+          <img src="images/Presidential-Employment-Stimulus_logo.91ace3ab[3].png" alt="Fitbit">
+        </li>
+        <li class="sponsor">
+          <img src="images/qcto.png" alt="Fitbit">
+        </li>
+        <li class="sponsor">
+          <img src="images/seta.jpeg" alt="Fitbit">
+        </li>
+        <li class="sponsor">
+          <img src="images/NFVF-LOGO1[4].png" alt="Fitbit">
+        </li>
+      </ul>
+      </div>
+
+  </section>
 
   <!-- info section -->
 
+
+
+
+
+
+
+
+
+
+
+
+  <!-- info section -->
   <section class="info_section ">
     <div class="info_container layout_padding2">
       <div class="container">
@@ -608,10 +521,10 @@
                     <a class="" href="teams.html"> Teams </a>
                   </li>
                   <li class="">
-                    <a class="" href="portfolio.html"> Portfolio <span class="sr-only">(current)</span></a>
+                    <a class="" href="portfolio.html"> Portfolio </a>
                   </li>
                   <li class="">
-                    <a class="" href="contact.html"> Contact </a>
+                    <a class="" href="contact.html"> Contact <span class="sr-only">(current)</span> </a>
                   </li>
                 </ul>
               </div>
